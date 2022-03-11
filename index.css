@@ -82,6 +82,13 @@ footer {
     color: white;
 }
 
+form {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 @media screen and (max-width:650px) {
    header {
         justify-content: space-around;
