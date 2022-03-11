@@ -115,6 +115,11 @@ form {
         display: block;
     }
     
+
+    footer {
+        background-color: black;
+        color: white;
+    }
 }
 
 @media screen and (min-width:850px) {
