@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* en tete */
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+}
+
+header h2 {
+    margin-top: 3%;
+}
+
+/* la liste de navigation*/
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 2em;
+    display: block;
+}
+
+nav ul li a:hover{
+    background-color: red;
+    overflow: hidden;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 345px;
+    background: linear-gradient(white,black);
+}
+
+.main p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.main p:hover {
+    color: yellow;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(2);
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.sect__animal {
+    text-align: center;
+}
+
+.sect__animal img:hover{
+    border-bottom: 2px solid red;
+    transform: scale(1.1);
+    transition: all 1.1s ease;
+}
+
+.menu, .hide__desktop{
+    display: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2%;
+    padding: 2%;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+@media screen and (max-width:650px) {
+   header {
+        justify-content: space-around;
+   }
+
+    header h2 {
+        font-size: 7px;
+    }
+
+    .hide_mobile {
+        display: none;
+    }
+
+    .main p {
+        font-size: 12px;
+    }
+
+    .sect__animal img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .menu{
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width:850px) {
+
+    .sect__animal {
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .sect__animal .sect__1, .sect__animal .sect__2{
+        display: flex;
+    }
+
+    .sect__animal .sect__1 div, .sect__animal .sect__2 div {
+        margin: 2%;
+    }
+}
